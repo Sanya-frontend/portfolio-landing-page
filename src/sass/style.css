@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  font-size: 2rem;
+  line-height: 2;
+  background-color: #000;
+  color: #FFFFFF;
+  font-family: "Merriweather", serif;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6rem;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:active {
+  transform: translateY(-5px);
+  transition: all 0.7s ease;
+  color: #BDAE82;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+section {
+  padding-top: 100px;
+}
+
+input {
+  display: block;
+}
+
+.overlay {
+  display: none;
+}
+
+.section-title {
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 4rem;
+  color: #BDAE82;
+  margin-bottom: 60px;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #BDAE82;
+  z-index: 1;
+}
+
+.section-title span {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+  background-color: #000;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=style.css.map */
