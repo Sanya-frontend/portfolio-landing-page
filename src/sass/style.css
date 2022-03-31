@@ -123,6 +123,89 @@ input {
   padding: 0 20px;
 }
 
+.btn {
+  padding: 16px 74px;
+  border: 0;
+  border-radius: 0px;
+  transition: all 0.7s;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  background: #BDAE82;
+  font-size: 2rem;
+  color: #000;
+}
+
+button:hover {
+  color: #FFFFFF;
+}
+
+.btn__dark {
+  width: 220px;
+  padding: 14px 72px;
+  border: 2px solid #BDAE82;
+  background-color: #000;
+  color: #BDAE82;
+}
+
+.btn__dark.active {
+  border: 2px solid #BDAE82;
+  padding: 14px 72px;
+  background-color: #BDAE82;
+  color: #000;
+}
+
+.themes-btn {
+  width: 41px;
+  height: 40px;
+  margin-left: 30px;
+  background-image: url("../img/header/dark-theme.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.themes-btn:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.themes-btn.light-theme {
+  background-image: url("../img/header/light-theme.svg");
+  background-color: transparent;
+}
+.themes-btn.light-theme:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.ripple {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple span {
+  position: relative;
+  z-index: 1;
+}
+
+.ripple::before {
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  height: 0;
+  width: 0;
+  transition: width 0.6s, height 0.6s;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(28, 65, 3, 0.6);
+}
+
+.ripple:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
 .header__container {
   min-height: 90px;
   display: flex;
