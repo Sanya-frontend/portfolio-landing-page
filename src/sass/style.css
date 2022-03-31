@@ -545,6 +545,44 @@ input:-webkit-autofill:active {
   background-image: url("../img/footer/pinterest.svg");
 }
 
+.light-theme {
+  background-color: #FFFFFF;
+  color: #000;
+}
+.light-theme .section-title {
+  color: #000;
+}
+.light-theme .section-title::before {
+  background-color: #000;
+}
+.light-theme .section-title span {
+  background-color: #FFFFFF;
+}
+.light-theme .tabs__btn {
+  border: 2px solid #BDAE82;
+  color: #000;
+  background-color: #FFFFFF;
+}
+.light-theme .tabs__btn:hover {
+  color: #FFFFFF;
+  background-color: #BDAE82;
+}
+.light-theme .tabs__btn.active {
+  border: 2px solid #BDAE82;
+  color: #FFFFFF;
+  background-color: #BDAE82;
+}
+.light-theme .price-list__item {
+  border: 3px solid #BDAE82;
+}
+.light-theme .price-list__item .btn {
+  color: #000;
+  background-color: #BDAE82;
+}
+.light-theme .price-list__item .btn:hover {
+  color: #FFFFFF;
+}
+
 @media (max-width: 1439px) {
   .skill-list {
     justify-content: center;
