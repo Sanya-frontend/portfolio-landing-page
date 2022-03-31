@@ -117,4 +117,112 @@ input {
   z-index: 2;
 }
 
+.header__container {
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../img/header/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.logo-link {
+  line-height: 0;
+}
+.logo-link:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.main-nav {
+  margin-left: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  line-height: 5rem;
+  color: #FFFFFF;
+}
+.navigation li + li {
+  margin-left: 30px;
+}
+
+.navigation.light-theme {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.btn-lang {
+  font-weight: bold;
+}
+.btn-lang .lang-en {
+  padding-left: 32px;
+}
+.btn-lang__en, .btn-lang__ru {
+  display: none;
+}
+.btn-lang span {
+  padding: 0 4px;
+}
+.btn-lang label {
+  cursor: pointer;
+}
+.btn-lang .btn-lang.active {
+  color: #BDAE82;
+}
+.btn-lang input[type=radio]:checked + label {
+  transition: all 0.4s;
+}
+.btn-lang input[type=radio] + label:hover {
+  color: #BDAE82;
+}
+
+.footer__container {
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2.5;
+}
+.footer__container div {
+  width: 192px;
+}
+.footer__container span {
+  display: inline-block;
+  padding-right: 14px;
+  padding-left: 16px;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+.social__item {
+  width: 32px;
+  height: 32px;
+}
+
+.social__link {
+  width: 32px;
+  height: 32px;
+}
+.social__link:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+.social__link--inst {
+  background-image: url("../img/footer/inst.svg");
+}
+.social__link--fb {
+  background-image: url("../img/footer/fb.svg");
+}
+.social__link--twitter {
+  background-image: url("../img/footer/twitter.svg");
+}
+.social__link--pinterest {
+  background-image: url("../img/footer/pinterest.svg");
+}
+
 /*# sourceMappingURL=style.css.map */
