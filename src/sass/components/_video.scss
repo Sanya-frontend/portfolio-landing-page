@@ -1,0 +1,19 @@
+.video-player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-btn {
+      position: absolute;
+      background-color: transparent;
+      
+      &:hover {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+      }
+      svg {
+        width: 130px;
+        height: 130px;
+      }
+  }
