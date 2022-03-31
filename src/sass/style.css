@@ -322,6 +322,49 @@ button:hover {
   padding-bottom: 25px;
 }
 
+.skill-list {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  padding-bottom: 0;
+  font-size: 1.8rem;
+}
+.skill-list__item {
+  width: 25%;
+  text-align: center;
+}
+.skill-list__title {
+  padding-bottom: 22px;
+}
+.skill-list__text {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding-bottom: 9px;
+}
+.skill-list__img {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  height: 50px;
+}
+.skill-list__img--camera {
+  background-image: url("./../img/skills/camera.svg");
+  width: 62px;
+}
+.skill-list__img--video {
+  background-image: url("./../img/skills/video.svg");
+  width: 60px;
+}
+.skill-list__img--images {
+  background-image: url("./../img/skills/image.svg");
+  width: 68px;
+}
+.skill-list__img--mic {
+  background-image: url("./../img/skills/mic.svg");
+  width: 32px;
+}
+
 .portfolio {
   text-align: center;
 }
@@ -334,6 +377,40 @@ button:hover {
 
 .tabs {
   padding-bottom: 60px;
+}
+
+.price-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.price-list__item {
+  min-height: 450px;
+  width: 420px;
+  padding: 40px 43px;
+  border: 3px solid #BDAE82;
+}
+.price-list__title {
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+.price-list__cost {
+  margin-bottom: 20px;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #BDAE82;
+}
+.price-list span {
+  display: block;
+  font-size: 1.8rem;
+}
+.price-list button {
+  margin-top: 38px;
+  padding-right: 38px;
+  padding-left: 38px;
 }
 
 .contacts {
