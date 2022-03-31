@@ -117,6 +117,12 @@ input {
   z-index: 2;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .header__container {
   min-height: 90px;
   display: flex;
