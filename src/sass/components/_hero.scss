@@ -1,0 +1,23 @@
+
+.hero {
+    padding-top: 0;
+    &__container {
+        padding-top: 160px;
+        padding-bottom: 330px; 
+        background-image: url('../img/header/bg.jpg');
+        background-position: center -90px;
+        background-repeat: no-repeat;
+    }
+    &__content {
+        height: 330px;
+        max-width: 540px;
+        padding-left: 60px;
+        button:hover {
+        color: $color-light;
+        }
+    }
+    &__description {
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+}

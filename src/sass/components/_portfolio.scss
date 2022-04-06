@@ -1,0 +1,13 @@
+.portfolio {
+    text-align: center;
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+.tabs {
+    padding-bottom: 60px;
+}

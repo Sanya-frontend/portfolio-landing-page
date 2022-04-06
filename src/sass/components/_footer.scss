@@ -1,0 +1,46 @@
+.footer__container {
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2.5;
+    div {
+        width: 192px;
+    }
+    span {
+        display: inline-block;
+        padding-right: 14px;
+        padding-left: 16px;
+    }
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    &__item {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.social__link  {
+    width: 32px;
+    height: 32px;
+    &:hover {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+      }
+    &--inst {
+        background-image: url('../img/footer/inst.svg');
+    }
+    &--fb {
+        background-image: url('../img/footer/fb.svg');
+    }
+    &--twitter {
+        background-image: url('../img/footer/twitter.svg');
+    }
+    &--pinterest {
+        background-image: url('../img/footer/pinterest.svg');
+    }
+}

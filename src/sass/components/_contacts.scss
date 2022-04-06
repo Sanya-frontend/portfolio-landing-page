@@ -1,0 +1,67 @@
+.contacts {
+    padding-top: 60px;
+    padding-bottom: 195px;
+    background-image: url('../img/contacts/contacts.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 700px;
+    background-position: center center;
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+       
+    }
+    &__content {
+        width: 450px;
+    }
+    &__title {
+        padding-bottom: 40px;
+        color: $color-primary;
+        font-family: 'Merriweather', serif;
+        font-size: 4rem;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px 0 11px 20px;
+        border: 2px solid $color-primary;
+        background: rgba(0, 0, 0, 0.5);
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2rem;
+        color: $color-primary;
+        &::placeholder {
+            font-family: inherit;
+            color: $color-primary;
+            font-size: 2rem;
+          }
+    }
+    button {
+        padding: 16px 40px;
+    }
+    textarea {
+        display: block;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 30px;
+        padding: 12px 0 10px 20px;
+        border: 2px solid #BDAE82;
+        // outline: none;
+        resize: none;
+        color: $color-primary;
+        background: rgba(0, 0, 0, 0.5);
+        &::placeholder {
+            font-family: 'Inter', sans-serif;
+            color: $color-primary;
+            font-size: 2rem;
+          }
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: $color-primary;
+  transition: background-color 0s ease-in-out 9000s;
+}
